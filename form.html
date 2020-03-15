@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+   .moiteMoite{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   }
+   .moiteMoite>.form-group{
+   	width: 49.8%;
+   }
+   .moiteMoite> .logoUpdate{
+   	position: relative;
+   	width: 80%;
+   }
+   .logoPreview{
+   	width: 19.8%;
+   }
+   .logoPreview img{
+   	width: 100%;
+   	border-radius: 100%;
+   }
+   .form-group>form{
+   	padding: 20px;
+   }
+</style>
+	<div class="form-group">
+		<form method="POST" action="/">
+			<div class="form-group">
+				<label class="control-label">Thème du stage BAFA</label>
+				<input type="text" name="theme" placeholder="Thème bafa" class="form-control" required/>
+			</div>
+			<div class="moiteMoite">
+				<div class="form-group">
+				<label class="control-label">Date de début</label>
+				<input type="date" name="datedebut" class="form-control" required/>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Date de fin</label>
+				<input type="date" name="datefin" class="form-control" required/>
+			</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label">Type d'accueil</label>
+				<select class="form-control" name="accueil">
+					<option value="externe">Externe</option>
+					<option value="interne">Interne</option>
+					<option value="demipension">Demi-pension</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Lien vers votre fiche de stage</label>
+				<input type="url" name="" placeholder="lien stage bafa..." class="form-control" />
+			</div>
+			<div class="form-group">
+				<label class="control-label"></label>
+				<input type="text" name="" placeholder="adresse" class="form-control" />
+			</div>
+			<div class="moiteMoite">
+				<div class="form-group">
+				<label class="control-label"></label>
+				<input type="postal" name="zipcode" placeholder="Code postal" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label class="control-label"></label>
+				<input type="text" name="ville" placeholder="Ville" class="form-control" />
+			</div>
+			</div>
+			<div class="moiteMoite">
+				<div class="logoPreview">
+					<img src="https://via.placeholder.com/150">
+				</div>
+				<div class="form-group logoUpdate">
+				<label class="control-label">Logo organisme</label>
+				<input type="file" name="logo" placeholder="" class="form-control" />
+			</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label">Organisme</label>
+				<input type="text" name="organisme" placeholder="Organisme..." class="form-control" required/>
+			</div>
+			<div class="form-group">
+				<label class="control-label">Email</label>
+				<input type="email" name="" placeholder="stagebafa@exemple.fr" class="form-control" />
+			</div>
+			<div class="form-group">
+				<label class="control-label"></label>
+				<textarea rows="5" name="infobull" placeholder="Description de l'organisme (160 caractères max)..." class="form-control" required/></textarea>
+			</div>
+			<button name="" type="submit" class="btn btn-primary btn-block">Soumettre</button>
+		</form>
