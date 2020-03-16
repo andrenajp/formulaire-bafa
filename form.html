@@ -1,33 +1,41 @@
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>soumettre un stage bafa</title>
 	<style type="text/css">
-   .moiteMoite{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   }
-   .moiteMoite>.form-group{
-   	width: 49.8%;
-   }
-   .moiteMoite> .logoUpdate{
-   	position: relative;
-   	width: 80%;
-   }
-   .logoPreview{
-   	width: 19.8%;
-   }
-   .logoPreview img{
-   	width: 100%;
-   	border-radius: 100%;
-   }
-   .form-group>form{
-   	padding: 20px;
-   }
-</style>
+	   .moiteMoite{
+	   display: flex;
+	   flex-direction: row;
+	   flex-wrap: wrap;
+	   justify-content: space-between;
+	   align-items: center;
+	   width: 100%;
+	   }
+	   .moiteMoite>.form-group{
+	   	width: 49.8%;
+	   }
+	   .moiteMoite> .logoUpdate{
+	   	position: relative;
+	   	width: 80%;
+	   }
+	   .logoPreview{
+	   	width: 19.8%;
+	   }
+	   .logoPreview img{
+	   	width: 100%;
+	   	border-radius: 100%;
+	   }
+	   .form-group>form{
+	   	padding: 20px;
+	   }
+	</style>
+</head>
+<body>
+
+	
 	<div class="form-group">
-		<form method="POST" action="/">
+		<form method="POST" action="/" enctype="multipart/form-data">
 			<div class="form-group">
 				<label class="control-label">Thème du stage BAFA</label>
 				<input type="text" name="theme" placeholder="Thème bafa" class="form-control" required/>
@@ -93,3 +101,6 @@
 			</div>
 			<button name="" type="submit" class="btn btn-primary btn-block">Soumettre</button>
 		</form>
+
+</body>
+</html>
